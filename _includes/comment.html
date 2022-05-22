@@ -3,28 +3,28 @@
 <div id="gitalk-container"></div>
 
 <script data-no-instant type="text/javascript">
-  const gitalk = new Gitalk({
-    clientID: '{{ site.comments.gitalk.clientID }}',
-    clientSecret: '{{ site.comments.gitalk.clientSecret }}',
-    repo: '{{ site.comments.gitalk.repo }}',
-    owner: '{{ site.comments.gitalk.owner }}',
-    admin: ['{{ site.comments.gitalk.admin }}'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+//   const gitalk = new Gitalk({
+//     clientID: '{{ site.comments.gitalk.clientID }}',
+//     clientSecret: '{{ site.comments.gitalk.clientSecret }}',
+//     repo: '{{ site.comments.gitalk.repo }}',
+//     owner: '{{ site.comments.gitalk.owner }}',
+//     admin: ['{{ site.comments.gitalk.admin }}'],
+//     id: location.pathname,      // Ensure uniqueness and length less than 50
+//     distractionFreeMode: false  // Facebook-like distraction free mode
+//   })
 
-  gitalk.render('gitalk-container')
-  // var gitalk = new Gitalk({
-  //   clientID: "9a796fda0ca58a21a5a2",
-  //   clientSecret: "f0391e335a825ee4894bb5e888268173bcfbe1c2",
-  //   repo: "talks",
-  //   owner: "GlovenIT",
-  //   admin: [
-  //     "GlovenIT",
-  //   ],
-  //   id: location.pathname, // Ensure uniqueness and length less than 50
-  //   distractionFreeMode: false, // Facebook-like distraction free mode
-  // });
+//   gitalk.render('gitalk-container')
+  const gitalk = new Gitalk({
+    clientID: "9a796fda0ca58a21a5a2",
+    clientSecret: "f0391e335a825ee4894bb5e888268173bcfbe1c2",
+    repo: "talks",
+    owner: "GlovenIT",
+    admin: [
+      "GlovenIT",
+    ],
+    id: location.pathname, // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+  });
 
   gitalk.render("gitalk-container");
 </script>
