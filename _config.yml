@@ -15,8 +15,8 @@ highlighter: rouge
 markdown: kramdown
 comments :
   gitalk :
-    clientID : 
-    clientSecret : 
-    repo : 
-    owner : 
-    admin : 
+    clientID : 9a796fda0ca58a21a5a2
+    clientSecret : f0391e335a825ee4894bb5e888268173bcfbe1c2
+    repo : talks
+    owner : GlovenIT
+    admin : [GlovenIT]
